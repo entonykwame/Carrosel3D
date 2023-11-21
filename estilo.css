@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    background: black;
+    font-family: sans-serif;
+    color: rgb(144, 0, 255)
+}
+
+
+.container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+}
+
+.carrossel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 40s infinite forwards linear;
+}
+
+.imagem {
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+}
+
+.imagem span {
+    margin: auto;
+    font-size: 1.4em;
+    text-align: center;
+    background: rgba(235, 4, 235, 0);
+}
+
+@keyframes rotate360 {
+
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+
+.imagem:nth-child(1){
+    background-image: url(https://acdn.mitiendanube.com/stores/001/226/115/products/rebellionaire-41-dc1bde1c54b1f955ea16471146575356-1024-1024.webp);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2){
+    background-image: url(https://media.blackandwhite-ff.com/10000/3dfce27b-03a0-4db2-a2be-92634707fe08_1-yeezy350.jpg);
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3){
+    background-image: url(https://photos.enjoei.com.br/tenis-nike-air-max-270-react-azul-marinho-42814025/800x800/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy8xMzIwMzQzMy9kN2QwZGRhYTM1NGY3YmQ5ZWVkNjMwYjhkMDdkY2Y3NS5qcGc);
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4){
+    background-image: url(https://sneakernews.com/wp-content/uploads/2017/10/nike-vapormax-plus-black.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+}
+.imagem:nth-child(5){
+    background-image: url(https://bebeencanto.com/wp-content/uploads/2022/03/Crocs-Infantil-Sandalia-Infantil-Cor-Cinza.png.webp);
+    transform: rotateY(160deg) translateZ(430px);
+}
+.imagem:nth-child(6){
+    background-image: url(https://waytenis.vteximg.com.br/arquivos/ids/185166-1000-1000/tenis-olympikus-zex-branco-vandacalcados2.jpg?v=638079204264170000);
+    transform: rotateY(200deg) translateZ(430px);
+}
+.imagem:nth-child(7){
+    background-image: url(https://www.leveshoes.com.br/wp-content/uploads/2021/10/T%C3%AAnis-Puma-Hits-preto.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+.imagem:nth-child(8){
+    background-image: url(https://static.zattini.com.br/produtos/tenis-fila-fit-tech-masculino/70/D29-2962-270/D29-2962-270_zoom1.jpg?ts=1692819953&ims=544x);
+    transform: rotateY(280deg) translateZ(430px);
+}
+.imagem:nth-child(9){
+    background-image: url(https://acdn.mitiendanube.com/stores/001/665/435/products/e8754347-7e37-47ee-b539-0f22100a316e1-275ec02f3c480ffbe216806485964543-480-0.webp);
+    transform: rotateY(320deg) translateZ(430px);
+}
